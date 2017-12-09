@@ -1,0 +1,22 @@
+// ==========================================================================
+// List Group
+// ==========================================================================
+
+.list-group {
+    position: relative;
+    display: block;
+}
+
+.list-group__item {
+    display: block;
+    border-bottom: 1px dashed #d7d7d7;
+}
+
+.list-group__item:first-child {
+    padding-top: 0;
+}
+
+.list-group__item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0 none;
+}
