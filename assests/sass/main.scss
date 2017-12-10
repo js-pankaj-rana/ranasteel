@@ -4,8 +4,8 @@
 @import './_utils/_typography';
 
 body{
-	font-family: $font-family-sans-serif ;
-	}
+	font-family: $font-family-sans-serif;
+    }
 
 @media only screen and (min-width:992px){
 	.container-fluid{
@@ -16,13 +16,14 @@ body{
 		right: 0px;
 		bottom:0px;
 		z-index: 1;
+        font-family: open_sansregular;
 			.layer-1{
 				position: absolute;
 				left: 0px;
 				top: 0px;
 				bottom: 0px;
 				right: 0px;
-				z-index: 2;
+				z-index: 100;
 			}
 
 	}
@@ -67,7 +68,6 @@ body{
 .nav-top-content {
     &:last-child{
     	margin-left: 20px;
-    	border-left:1px solid #fff;
     }
 }
 
@@ -122,11 +122,14 @@ body{
     left: calc(50% - 50px);
     top: calc(50% - 50px);
     cursor: pointer;
-    transition: all 0.45s ease-in-out 0s;
+    transition: all 0.35s ease-in-out 0s;
     &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: rebeccapurple;
     opacity: 1;
+    -webkit-box-shadow: -2px 0px 9px 0px rgba(62, 34, 0, 0.75);
+    -moz-box-shadow:    -2px 0px 9px 0px rgba(62, 34, 0, 0.75);
+    box-shadow:         -2px 0px 9px 0px rgba(62, 34, 0, 0.75);
 	}
 }
 
@@ -187,7 +190,13 @@ body{
     font-family: opensans-semibold;
     cursor: pointer;
 }
+.waves-effect.waves-brown .waves-ripple {
+      background-color: rgba(121, 85, 72, 0.65);
+    }
+
 }
+
+
 
 
 
