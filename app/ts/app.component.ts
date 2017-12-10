@@ -22,7 +22,7 @@ export class AppComponent {
 			
 	}
 	drawCircle(){
-		var x = $(window).width();
+		
 		console.log(x)
 	}
 }
